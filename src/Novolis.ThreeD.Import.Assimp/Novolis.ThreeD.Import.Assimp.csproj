@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.ThreeD.Import.Assimp</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Assimp-based FBX, OBJ, and glTF import into Novolis.Math.Geometry meshes and ThreeD asset data. Native Assimp runtime required.</Description>
+    <RootNamespace>Novolis.ThreeD</RootNamespace>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AssimpNet" />
+    <PackageReference Include="Novolis.Math.Geometry" />
+  </ItemGroup>
+</Project>

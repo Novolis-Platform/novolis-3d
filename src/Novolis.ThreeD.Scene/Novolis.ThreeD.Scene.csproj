@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.ThreeD.Scene</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Renderer-neutral 3D scene graph with nodes, lights, cameras, staged evaluation, mesh editing, and .nov3djson serialization.</Description>
+    <RootNamespace>Novolis.ThreeD</RootNamespace>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Novolis.Math.Geometry" />
+  </ItemGroup>
+</Project>

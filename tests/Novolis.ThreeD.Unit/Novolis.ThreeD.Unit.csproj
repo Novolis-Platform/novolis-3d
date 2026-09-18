@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Novolis.ThreeD.Unit</RootNamespace>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="TUnit" />
+    <PackageReference Include="Novolis.Math.Geometry" />
+    <PackageReference Include="AssimpNet" />
+    <ProjectReference Include="..\..\src\Novolis.ThreeD.Scene\Novolis.ThreeD.Scene.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.ThreeD.Import.Assimp\Novolis.ThreeD.Import.Assimp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fixtures\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

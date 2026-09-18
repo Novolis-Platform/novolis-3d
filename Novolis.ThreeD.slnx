@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Novolis.ThreeD.Scene/Novolis.ThreeD.Scene.csproj" />
+    <Project Path="src/Novolis.ThreeD.Import.Assimp/Novolis.ThreeD.Import.Assimp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Novolis.ThreeD.Unit/Novolis.ThreeD.Unit.csproj" />
+  </Folder>
+</Solution>
