@@ -7,7 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="TUnit" />
-    <PackageReference Include="Novolis.Math.Geometry" />
+    <LibraryReference Include="Novolis.Math.Geometry" />
     <PackageReference Include="AssimpNet" />
     <ProjectReference Include="..\..\src\Novolis.ThreeD.Scene\Novolis.ThreeD.Scene.csproj" />
     <ProjectReference Include="..\..\src\Novolis.ThreeD.Import.Assimp\Novolis.ThreeD.Import.Assimp.csproj" />
