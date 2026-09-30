@@ -2,23 +2,6 @@ using System.Text.Json.Serialization;
 
 namespace Novolis.ThreeD;
 
-[JsonConverter(typeof(JsonStringEnumConverter))]
-public enum SceneEditMode
-{
-    Object,
-    Point,
-    Edge,
-    Polygon,
-}
-
-[JsonConverter(typeof(JsonStringEnumConverter))]
-public enum SceneDisplayMode
-{
-    Wireframe,
-    WirePoints,
-    Isoline,
-}
-
 /// <summary>Runtime component selection / display state (not persisted in .nov3djson).</summary>
 public sealed class MeshEditState
 {

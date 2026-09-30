@@ -1,14 +1,13 @@
-using System.Numerics;
+﻿using System.Numerics;
 using System.Text.Json.Serialization;
 using Novolis.Math.Geometry;
 
 namespace Novolis.ThreeD;
 
 [JsonConverter(typeof(JsonStringEnumConverter))]
-public enum LightKind
+public enum GeneratorKind
 {
-    Omni,
-    Spot,
-    Infinite,
-    Area,
+    Cloner,
+    Symmetry,
+    Boole,
 }

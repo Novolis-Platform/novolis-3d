@@ -2,8 +2,6 @@ using System.Numerics;
 
 namespace Novolis.ThreeD;
 
-public readonly record struct MeshPickHit(Guid SourceId, SceneEditMode Mode, int Index, int IndexB, float Distance);
-
 /// <summary>Closest vertex / edge / triangle under a world-space ray.</summary>
 public static class MeshPicker
 {
@@ -176,5 +174,3 @@ public static class MeshPicker
         return t >= 0;
     }
 }
-
-public readonly record struct Ray(Vector3 Position, Vector3 Direction);

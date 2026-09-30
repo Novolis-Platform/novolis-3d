@@ -6,20 +6,6 @@ using NumericsMatrix = System.Numerics.Matrix4x4;
 
 namespace Novolis.ThreeD;
 
-/// <summary>Per-vertex bone influences keyed by authoring bone name (Mixamo / FBX).</summary>
-public readonly record struct AssimpNamedBoneWeight(string BoneName, float Weight);
-
-/// <summary>Geometry plus optional Assimp skin weights (no Humanoid retarget yet).</summary>
-public sealed class AssimpNamedSkinImport
-{
-    public required TriangleMesh Mesh { get; init; }
-
-    /// <summary>Length equals <see cref="TriangleMesh.VertexCount"/>; empty arrays when a vertex has no weights.</summary>
-    public required IReadOnlyList<AssimpNamedBoneWeight[]> VertexWeights { get; init; }
-
-    public bool HasSkinning => VertexWeights.Any(w => w.Length > 0);
-}
-
 /// <summary>
 /// Assimp import that preserves bone weights when present (does not use PreTransformVertices,
 /// which would destroy the skin). Returns null when the file has no skinned meshes.
