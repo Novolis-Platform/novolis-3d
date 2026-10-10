@@ -1,24 +1,24 @@
 {
   "packages": {
-    "Novolis.ThreeD.Scene": {
+    "Novolis.Modeling.Scene": {
       "paths": [
-        "src/Novolis.ThreeD.Scene/**",
-        "tests/Novolis.ThreeD.Unit/**",
+        "src/Novolis.Modeling.Scene/**",
+        "tests/Novolis.Modeling.Unit/**",
         "Directory.Build.props",
         "Directory.Packages.props",
         "global.json"
       ],
-      "project": "src/Novolis.ThreeD.Scene/Novolis.ThreeD.Scene.csproj"
+      "project": "src/Novolis.Modeling.Scene/Novolis.Modeling.Scene.csproj"
     },
-    "Novolis.ThreeD.Import.Assimp": {
+    "Novolis.Modeling.Import.Assimp": {
       "paths": [
-        "src/Novolis.ThreeD.Import.Assimp/**",
-        "tests/Novolis.ThreeD.Unit/**",
+        "src/Novolis.Modeling.Import.Assimp/**",
+        "tests/Novolis.Modeling.Unit/**",
         "Directory.Build.props",
         "Directory.Packages.props",
         "global.json"
       ],
-      "project": "src/Novolis.ThreeD.Import.Assimp/Novolis.ThreeD.Import.Assimp.csproj"
+      "project": "src/Novolis.Modeling.Import.Assimp/Novolis.Modeling.Import.Assimp.csproj"
     }
   }
 }

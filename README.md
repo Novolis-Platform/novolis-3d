@@ -6,8 +6,8 @@
 
 | Package | Install | Package README |
 |---------|---------|----------------|
-| `Novolis.ThreeD.Import.Assimp` | `dotnet add package Novolis.ThreeD.Import.Assimp` | [README](https://github.com/Novolis-Platform/novolis-3d/blob/main/src/Novolis.ThreeD.Import.Assimp/README.md) |
-| `Novolis.ThreeD.Scene` | `dotnet add package Novolis.ThreeD.Scene` | [README](https://github.com/Novolis-Platform/novolis-3d/blob/main/src/Novolis.ThreeD.Scene/README.md) |
+| `Novolis.Modeling.Import.Assimp` | `dotnet add package Novolis.Modeling.Import.Assimp` | [README](https://github.com/Novolis-Platform/novolis-modeling/blob/main/src/Novolis.Modeling.Import.Assimp/README.md) |
+| `Novolis.Modeling.Scene` | `dotnet add package Novolis.Modeling.Scene` | [README](https://github.com/Novolis-Platform/novolis-modeling/blob/main/src/Novolis.Modeling.Scene/README.md) |
 
 For NuGet.org and Visual Studio, the **embedded** README.md inside each package is authoritative.
 
@@ -21,23 +21,23 @@ For NuGet.org and Visual Studio, the **embedded** README.md inside each package 
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/banners/novolis-3d.svg" width="100%" alt="novolis-3d"/>
+  <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/banners/novolis-modeling.svg" width="100%" alt="novolis-modeling"/>
 </p>
 
 <p align="center">
   <strong>Novolis ecosystem library</strong><br/>
-  Part of the Novolis platform (novolis-3d).
+  Part of the Novolis platform (novolis-modeling).
 </p>
 
 <p align="center">
-  <a href="https://novolis-platform.github.io/.github/novolis-3d/"><img src="https://img.shields.io/badge/docs-portfolio-0a7ea3" alt="docs"/></a>
-  <a href="https://github.com/Novolis-Platform/novolis-3d/actions"><img src="https://img.shields.io/github/actions/workflow/status/Novolis-Platform/novolis-3d/merge.yml?branch=main&label=merge&logo=github" alt="merge"/></a>
-  <a href="https://github.com/orgs/Novolis-Platform/packages?repo_name=novolis-3d"><img src="https://img.shields.io/badge/packages-GitHub%20Packages-0a7ea3?logo=nuget" alt="packages"/></a>
+  <a href="https://novolis-platform.github.io/.github/novolis-modeling/"><img src="https://img.shields.io/badge/docs-portfolio-0a7ea3" alt="docs"/></a>
+  <a href="https://github.com/Novolis-Platform/novolis-modeling/actions"><img src="https://img.shields.io/github/actions/workflow/status/Novolis-Platform/novolis-modeling/merge.yml?branch=main&label=merge&logo=github" alt="merge"/></a>
+  <a href="https://github.com/orgs/Novolis-Platform/packages?repo_name=novolis-modeling"><img src="https://img.shields.io/badge/packages-GitHub%20Packages-0a7ea3?logo=nuget" alt="packages"/></a>
   <a href="https://github.com/Novolis-Platform"><img src="https://img.shields.io/badge/org-Novolis--Platform-111827" alt="org"/></a>
 </p>
 
 <p align="center">
-  <a href="https://novolis-platform.github.io/.github/novolis-3d/">Docs</a>
+  <a href="https://novolis-platform.github.io/.github/novolis-modeling/">Docs</a>
   ·
   <a href="https://nuget.pkg.github.com/Novolis-Platform/index.json"><code>https://nuget.pkg.github.com/Novolis-Platform/index.json</code></a>
   ·
@@ -48,9 +48,9 @@ For NuGet.org and Visual Studio, the **embedded** README.md inside each package 
 
 ---
 <!-- novolis-marketing:end -->
-# novolis-3d
+# novolis-modeling
 
-Avalonia-free ThreeD scene and asset packages for Novolis.
+Avalonia-free Modeling scene and asset packages for Novolis.
 
 The repository owns the renderer-neutral scene domain. UI controls live in
 `novolis-avalonia`; CAD projects into this scene through
@@ -60,22 +60,22 @@ The repository owns the renderer-neutral scene domain. UI controls live in
 
 | Package | Responsibility |
 |---------|----------------|
-| `Novolis.ThreeD.Scene` | Scene documents, nodes, evaluation, editing, and `.nov3djson` serialization |
-| `Novolis.ThreeD.Import.Assimp` | Assimp-based FBX, OBJ, and glTF import |
+| `Novolis.Modeling.Scene` | Scene documents, nodes, evaluation, editing, and `.nov3djson` serialization |
+| `Novolis.Modeling.Import.Assimp` | Assimp-based FBX, OBJ, and glTF import |
 
 ## Boundary
 
 `Novolis.Math.Geometry` owns mesh data structures and algorithms.
-`Novolis.ThreeD.Scene` composes those values into a spatial document.
-`Novolis.ThreeD.Import.Assimp` translates foreign asset files. Neither package
+`Novolis.Modeling.Scene` composes those values into a spatial document.
+`Novolis.Modeling.Import.Assimp` translates foreign asset files. Neither package
 depends on Avalonia, rendering, simulation, CAD, or application hosts.
 
 ## Build
 
 ```powershell
-dotnet restore d:\novolis\novolis-3d\Novolis.ThreeD.slnx
-dotnet build d:\novolis\novolis-3d\Novolis.ThreeD.slnx
-dotnet test d:\novolis\novolis-3d\tests\Novolis.ThreeD.Unit\Novolis.ThreeD.Unit.csproj
+dotnet restore d:\novolis\novolis-modeling\Novolis.Modeling.slnx
+dotnet build d:\novolis\novolis-modeling\Novolis.Modeling.slnx
+dotnet test d:\novolis\novolis-modeling\tests\Novolis.Modeling.Unit\Novolis.Modeling.Unit.csproj
 ```
 
 Package restore uses only nuget.org and GitHub Packages. For local

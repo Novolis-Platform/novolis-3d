@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Novolis.Modeling.Scene/Novolis.Modeling.Scene.csproj" />
+    <Project Path="src/Novolis.Modeling.Import.Assimp/Novolis.Modeling.Import.Assimp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Novolis.Modeling.Unit/Novolis.Modeling.Unit.csproj" />
+  </Folder>
+</Solution>
